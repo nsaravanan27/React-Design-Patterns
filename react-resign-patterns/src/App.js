@@ -1,7 +1,13 @@
 import './App.css';
+import { ListContainer } from './Layout/Lists/ListContainer';
 import { SplitScreen } from './Layout/SplitScreen';
 
-const LeftComponent = ({name}) => <h1 style={{ backgroundColor: 'gray'}}> Left! {name}</h1>;
+const LeftComponent = ({ name }) => (
+  <>
+    <h1 style={{ backgroundColor: "gray" }}> Left! {name} </h1>
+    <ListContainer />
+  </>
+);
 const RightComponent = ({message}) => <p style={{ backgroundColor: 'yellow'}}> Right! {message} </p>
 
 function App() {
